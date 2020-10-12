@@ -136,6 +136,7 @@ else
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": "off",
     "max-len": [
       "warn",
       {
@@ -164,7 +165,11 @@ else
   echo ${config_opening}'
   "printWidth": '${max_len_val}',
   "singleQuote": true,
-  "trailingComma": "'${trailing_comma_pref}'"
+  "trailingComma": "'${trailing_comma_pref}'",
+  "semi": false,
+  "bracketSpacing": false,
+  "proseWrap": "always",
+  "endOfLine": "lf"
 }' >> .prettierrc${config_extension}
 fi
 
