@@ -166,8 +166,10 @@ else
   "printWidth": '${max_len_val}',
   "singleQuote": true,
   "trailingComma": "'${trailing_comma_pref}'",
-  "semi": false,
-  "bracketSpacing": false,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "bracketSpacing": true,
   "proseWrap": "always",
   "endOfLine": "lf"
 }' >> .prettierrc${config_extension}
