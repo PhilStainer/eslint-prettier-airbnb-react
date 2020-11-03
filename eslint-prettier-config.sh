@@ -133,6 +133,9 @@ else
     "jest": true,
     "node": true
   },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
